@@ -14,5 +14,8 @@ data/compras-emergenciais-covid-19.csv: scripts/clean.R scripts/lib/utils.R data
 build: ## Compilação datapackage.json para buid/
 	Rscript --verbose scripts/build.R 2> logs/log.Rout
 
+publish: ## Upload data/ para dados.mg.gov.br/
+	Rscript --verbose scripts/publish.R 2> logs/log.Rout
+
 check: ## Executa conferência
 	Rscript --verbose scripts/check.R 2> logs/log.Rout
