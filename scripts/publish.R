@@ -1,10 +1,11 @@
 source("scripts/lib/utils.R")
 
 output <- jsonlite::read_json("datapackage.json")$resources[[1]]$path
+id <- jsonlite::read_json("datapackage.json")$resources[[1]]$id
 
-res <- ckanr::resource_update(id = "43570463-76a2-407e-89f9-4bfd10638354",
+res <- ckanr::resource_update(id = id,
                        path = output, 
-                       url = "http://dados.mg.gov.br", 
+                       url = Sys.getenv("DADOSMG_PROD_HOST"), 
                        key = Sys.getenv("DADOSMG_PROD"))
 
 stopifnot(check_upload(file = output, url = res$url))
