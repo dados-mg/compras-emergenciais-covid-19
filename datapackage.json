@@ -23,8 +23,8 @@
           {
             "name": "URL_PORTAL_TRANSPARENCIA",
             "title": "URL Portal da Transparência",
-            "type": "URL",
-            "format": "default",
+            "type": "string",
+            "format": "uri",
             "description": "Detalhamento do processo de compras no Portal da Transparência"
           },
           {
@@ -44,8 +44,8 @@
           {
             "name": "URL_DOCUMENTOS_PROCESSO",
             "title": "URL Documentos do Processo ",
-            "type": "URL",
-            "format": "default",
+            "type": "string",
+            "format": "uri",
             "description": "Relação dos documentos do processo de compra: Edital e suas retificações, relatório de detalhes de processo de compra, dados do pregão e outros arquivos relacionados ao processo."
           },
           {
@@ -86,8 +86,8 @@
           {
             "name": "URL_INTEGRA_CONTRATO",
             "title": "URL Íntegra Contrato",
-            "type": "URL",
-            "format": "default",
+            "type": "string",
+            "format": "uri",
             "description": "Link para íntegra do termo do Contrato celebrado e seus eventuais termos aditivos ou modificativos."
           },
           {
@@ -156,8 +156,8 @@
           {
             "name": "URL_PROCESSO_SEI",
             "title": "URL Íntegra Processo SEI",
-            "type": "URL",
-            "format": "default",
+            "type": "string",
+            "format": "uri",
             "description": "Link para consulta do processo eletrônico no Sistema Eletrônico de Informações (SEI)"
           },
           {
