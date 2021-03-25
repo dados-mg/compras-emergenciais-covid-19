@@ -23,7 +23,7 @@
           {
             "name": "URL_PORTAL_TRANSPARENCIA",
             "title": "URL Portal da Transparência",
-            "Tipo": "URL",
+            "type": "URL",
             "format": "default",
             "description": "Detalhamento do processo de compras no Portal da Transparência"
           },
@@ -44,7 +44,7 @@
           {
             "name": "URL_DOCUMENTOS_PROCESSO",
             "title": "URL Documentos do Processo ",
-            "Tipo": "URL",
+            "type": "URL",
             "format": "default",
             "description": "Relação dos documentos do processo de compra: Edital e suas retificações, relatório de detalhes de processo de compra, dados do pregão e outros arquivos relacionados ao processo."
           },
@@ -86,7 +86,7 @@
           {
             "name": "URL_INTEGRA_CONTRATO",
             "title": "URL Íntegra Contrato",
-            "Tipo": "URL",
+            "type": "URL",
             "format": "default",
             "description": "Link para íntegra do termo do Contrato celebrado e seus eventuais termos aditivos ou modificativos."
           },
@@ -107,28 +107,28 @@
           {
             "name": "DATA_PUBLICACAO",
             "title": "Data da Publicação ",
-            "Tipo": "date",
+            "type": "date",
             "format": "default",
             "description": "Data, no formato YYYY-MM-DD, de publicação do Contrato no IOF"
           },
           {
             "name": "INICIO_VIGENCIA",
             "title": "Início da Vigência ",
-            "Tipo": "date",
+            "type": "date",
             "format": "default",
             "description": "Data, no formato YYYY-MM-DD, de início da vigência do Contrato"
           },
           {
             "name": "FIM_VIGENCIA",
             "title": "Fim da Vigência ",
-            "Tipo": "date",
+            "type": "date",
             "format": "default",
             "description": "Data, no formato YYYY-MM-DD, de fim da vigência do Contrato"
           },
           {
             "name": "FIM_VIGENCIA_ATUALIZADA",
             "title": "Fim da Vigência Atualizada ",
-            "Tipo": "date",
+            "type": "date",
             "format": "default",
             "description": "Data, no formato YYYY-MM-DD, atualizada do fim da vigência do Contrato"
           },
@@ -156,7 +156,7 @@
           {
             "name": "URL_PROCESSO_SEI",
             "title": "URL Íntegra Processo SEI",
-            "Tipo": "URL",
+            "type": "URL",
             "format": "default",
             "description": "Link para consulta do processo eletrônico no Sistema Eletrônico de Informações (SEI)"
           },
