@@ -84,7 +84,7 @@
             "description": "Número identificador do Registro de Preço registrado no SIRP."
           },
           {
-            "name": "URL_REGISTRO_PRECO",
+            "name": "URL_NUMERO_REGISTRO_PRECO",
             "title": "URL do Registro de Preço",
             "type": "string",
             "format": "default",
