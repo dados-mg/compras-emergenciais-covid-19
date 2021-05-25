@@ -57,6 +57,20 @@
       "description": "Situação do processo de compra (concluído suspenso, em andamento, etc..). Quanto aos processos de compra com situação em andamento, são considerados apenas os itens já homologados desses processos."
     },
     {
+      "name": "NUMERO_REGISTRO_PRECO",
+      "title": "Número do Registro de Preço registrado no SIRP",
+      "type": "string",
+      "format": "default",
+      "description": "Número identificador do Registro de Preço registrado no SIRP."
+    },
+    {
+      "name": "URL_REGISTRO_PRECO",
+      "title": "URL do Regisro de Preço",
+      "type": "string",
+      "format": "default",
+      "description": "Detalhamento do Registro de Preço no portal de compras da SEPLAG."
+    },
+    {
       "name": "PROCEDIMENTO_CONTRATACAO",
       "title": "Procedimento de Contratação ",
       "type": "string",
