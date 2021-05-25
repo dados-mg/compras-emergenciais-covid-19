@@ -78,7 +78,7 @@
           },
           {
             "name": "URL_REGISTRO_PRECO",
-            "title": "URL do Regisro de Preço",
+            "title": "URL do Registro de Preço",
             "type": "string",
             "format": "default",
             "description": "Detalhamento do Registro de Preço no portal de compras da SEPLAG."
