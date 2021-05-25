@@ -1,6 +1,6 @@
 library(magrittr)
 
-controle <- readr::read_csv2("data-raw/compras-coronavirus-controle.csv", col_types = c("ccnccccnc"), locale = readr::locale(decimal_mark = ",", grouping_mark = "."))
+controle <- readr::read_csv2("data-raw/compras-coronavirus-controle.csv", col_types = c("ccnccccccnc"), locale = readr::locale(decimal_mark = ",", grouping_mark = "."))
 
 compras_coronavirus <- readr::read_csv2(jsonlite::read_json("datapackage.json")$resources[[1]]$path)
 
@@ -21,4 +21,15 @@ problemas_catalogacao <- diff_catalogacao %>%
 
 if(length(problemas_catalogacao) > 0) {
   stop(glue::glue("O processo {problemas_catalogacao} não estão presentes no arquivo controle"))
+}
+
+
+diff_registro_preco <- dplyr::anti_join(compras_coronavirus, controle, by = "NUMERO_REGISTRO_PRECO")
+
+problemas_registro_preco <- diff_registro_preco %>% 
+  dplyr::pull(NUMERO_REGISTRO_PRECO) %>% 
+  unique()
+
+if(length(problemas_registro_preco) > 0) {
+  stop(glue::glue("O registro de preço {problemas_registro_preco} não estão presentes no arquivo controle"))
 }
