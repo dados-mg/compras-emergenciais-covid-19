@@ -99,7 +99,7 @@ create_documentos_processo <- function(x) {
 }
 
 lookup_link_portal_transparencia <- function(x) {
-  table <- readr::read_csv2("data-raw/compras-coronavirus-controle.csv", col_types = c("ccnccccnc"), locale = readr::locale(decimal_mark = ",", grouping_mark = "."))
+  table <- readr::read_csv2("data-raw/compras-coronavirus-controle.csv", col_types = c("ccnccccccnc"), locale = readr::locale(decimal_mark = ",", grouping_mark = "."))
   
   lookup <- table %>% dplyr::pull(URL_PORTAL_TRANSPARENCIA)
   names(lookup) <- table %>% dplyr::pull(NUMERO_PROCESSO_COMPRA)
@@ -108,7 +108,7 @@ lookup_link_portal_transparencia <- function(x) {
 }
 
 lookup_processo_sei <- function(x) {
-  table <- readr::read_csv2("data-raw/compras-coronavirus-controle.csv", col_types = c("ccnccccnc"), locale = readr::locale(decimal_mark = ",", grouping_mark = "."))
+  table <- readr::read_csv2("data-raw/compras-coronavirus-controle.csv", col_types = c("ccnccccccnc"), locale = readr::locale(decimal_mark = ",", grouping_mark = "."))
   
   lookup <- table %>% dplyr::pull(PROCESSO_SEI)
   names(lookup) <- table %>% dplyr::pull(NUMERO_PROCESSO_COMPRA)
@@ -117,11 +117,10 @@ lookup_processo_sei <- function(x) {
 }
 
 lookup_link_sei <- function(x) {
-  table <- readr::read_csv2("data-raw/compras-coronavirus-controle.csv", col_types = c("ccnccccnc"), locale = readr::locale(decimal_mark = ",", grouping_mark = "."))
+  table <- readr::read_csv2("data-raw/compras-coronavirus-controle.csv", col_types = c("ccnccccccnc"), locale = readr::locale(decimal_mark = ",", grouping_mark = "."))
   
   lookup <- table %>% dplyr::pull(URL_PROCESSO_SEI)
   names(lookup) <- table %>% dplyr::pull(NUMERO_PROCESSO_COMPRA)
   
   lookup[x] %>% unname()
-}
-
+} 
