@@ -2,7 +2,7 @@
   "profile": "tabular-data-package",
   "resources": [
     {
-      "id": "43570463-76a2-407e-89f9-4bfd10638354",
+      "id": "72d031e9-2753-469a-acfa-2d67417a2f49",
       "profile": "tabular-data-resource",
       "name": "compras-emergenciais-covid-19",
       "path": "data/compras-emergenciais-covid-19.csv",
